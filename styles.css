@@ -1,0 +1,144 @@
+*{
+
+  margin:0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background-color: #e899dc;
+background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+}
+svg{
+  margin-left: 30%;
+  margin-top: 13%;
+
+}
+.wrapper{
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #F8F8FF;
+  padding: 25px;
+  border-radius: 40px;
+  box-shadow: 4px 4px 3px rgb(199,21,133);
+  cursor: none;
+  margin-top: -5%;
+}
+
+
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+
+}
+
+.wrapper textarea{
+
+  resize: none;
+
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #FFE4E1;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+margin-left:66%;
+
+}
+#error_message{
+  /* margin-bottom: 20px; */
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+h1{
+  text-align: center;
+
+}
+#work {
+    animation: puffIn 1800ms
+}
+
+@keyframes puffIn {
+    0% {
+        transform: scale3d(2, 2, 2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+#letgo{
+
+ animation: slideOutUp 1000ms
+}
+@keyframes slideOutUp {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        transform: translate3d(0, -100%, 0);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Tablet Landscape */
+    @media screen and (max-width: 1060px) {
+        #primary { width:67%; }
+        #secondary { width:30%; margin-left:3%;}
+    }
+    /* Tabled Portrait */
+    @media screen and (max-width: 768px) {
+        #primary { width:100%; }
+        #secondary { width:100%; margin:0; border:none; }
+    }
+
+
+
+}html { font-size:100%; }
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.2rem;} }
+@media (min-width:1100px) { body {font-size:1.5rem;} }
